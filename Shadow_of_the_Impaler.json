@@ -1,0 +1,629 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ShadowoftheImpaler",
+				"abbreviation": "SofI",
+				"full": "Shadow of the Impaler",
+				"url": "",
+				"authors": [
+					"Rising"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1588520625,
+		"dateLastModified": 1588520625
+	},
+	"monster": [
+		{
+			"name": "White Dragon Corpse",
+			"source": "ShadowoftheImpaler",
+			"page": 100,
+			"size": "G",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 280,
+				"formula": "17d20 + 102"
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 22,
+			"int": 4,
+			"wis": 9,
+			"cha": 6,
+			"save": {
+				"dex": "+6",
+				"con": "+12",
+				"wis": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+11",
+				"stealth": "+6"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 21,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Draconic but can't speak"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage plus 9 ({@damage 1d4 + 7}) cold damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a {@dc 22} Constitution saving throw, taking 58 ({@damage 13d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 22} Dexterity saving throw or take 14 ({@damage 2d6 + 7}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "White Dragon",
+				"source": "MM"
+			},
+			"environment": [
+				"arctic"
+			],
+			"dragonCastingColor": "W",
+			"hasToken": true,
+			"tokenUrl": "https://5e.tools/img/MM/Ancient White Dragon.png?v=1.103.5",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"uniqueId": "8aef1eb7fb78ec02c093cdad27bb6092"
+		},
+		{
+			"name": "Ruxandra",
+			"isNpc": true,
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Half Plate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 16,
+			"int": 17,
+			"wis": 24,
+			"cha": 18,
+			"save": {
+				"con": "+8",
+				"wis": "+12",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+8",
+				"deception": "+9",
+				"insight": "+17",
+				"intimidation": "+9",
+				"perception": "+12",
+				"religion": "+8"
+			},
+			"passive": 22,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish",
+				"Infernal"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Ruxandra is a 19th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Madam Eva has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell command}",
+								"{@spell detect evil and good}",
+								"{@spell protection from evil and good}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell protection from poison}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell create food and water}",
+								"{@spell speak with dead}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell divination}",
+								"{@spell freedom of movement}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell greater restoration}",
+								"{@spell raise dead}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell find the path}",
+								"{@spell harm}",
+								"{@spell true seeing}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell fire storm}",
+								"{@spell regenerate}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell earthquake}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"hasToken": true,
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"I"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"uniqueId": "5d46595f6ef4060b717b5d57f8cd7d57"
+		},
+		{
+			"name": "Undying King",
+			"source": "ShadowoftheImpaler",
+			"page": 241,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item half plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 199,
+				"formula": "21d8 + 105"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 20,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Martial Fury",
+					"entries": [
+						"As a bonus action, the sword wraith can make one weapon attack, which deals an extra 13 ({@damage 3d8}) necrotic damage on a hit. If it does so, attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Turning Defiance",
+					"entries": [
+						"The sword wraith and any other sword wraiths within 30 feet of it have advantage on saving throws against effects that turn undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sword wraith makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage, or 14 ({@damage 2d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}10 ({@damage 2d8 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Call to Honor (1/Day)",
+					"entries": [
+						"To use this action, the sword wraith must have taken damage during the current combat. If the sword wraith can use this action, it gives itself advantage on attack rolls until the end of its next turn, and {@dice 1d4 + 1} {@creature sword wraith warrior|mtf|sword wraith warriors} appear in unoccupied spaces within 30 feet of it. The warriors last until they drop to 0 hit points, and they take their turns immediately after the commander's turn on the same initiative count."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"swamp"
+			],
+			"fluff": {
+				"name": "Sword Wraith Commander",
+				"source": "MTF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Sword Wraith",
+										"entries": [
+											"When a glory-obsessed warrior dies in battle without earning the honor it desperately sought, its valor—hungry spirit might haunt the battlefield as a sword wraith."
+										]
+									},
+									{
+										"name": "Brooding Spirits",
+										"type": "entries",
+										"entries": [
+											"The most likely spots for encountering sword wraiths are scenes of ancient ambushes, battlefields where soldiers were felled by magic with no chance to fight back, and sites where enemies were hemmed in and slaughtered without quarter."
+										]
+									},
+									{
+										"name": "Honor Above All",
+										"type": "entries",
+										"entries": [
+											"Sword wraiths fly into a rage if anyone questions their valor. Conversely, they are easily appeased by praise. Little pleases them more than hearing a ballad performed in their honor. Towns located near ancient battlefields hold annual festivals of remembrance to keep sword wraiths there placated."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A sword wraith doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MTF/Sword Wraith.jpg"
+						}
+					}
+				]
+			},
+			"hasToken": true,
+			"tokenUrl": "https://5e.tools/img/MTF/Sword Wraith Commander.png?v=1.103.5",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/703/sword-wraith-commander.mp3",
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"uniqueId": "10bd9fbef6f8631199b5e66a5f2e1be5"
+		},
+		{
+			"name": "Ocarr",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 15,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+4",
+				"insight": "+6",
+				"animal handling": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ocarr makes two longsword attacks. "
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 3}) slashing damage, or 7 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"uniqueId": "3214befdc5abb236f0da33e0299d8a4d"
+		}
+	]
+}
