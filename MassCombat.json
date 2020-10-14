@@ -1,0 +1,499 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MassCombat",
+				"abbreviation": "MassC",
+				"full": "MassCombat",
+				"url": "",
+				"authors": [
+					"Rising"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1602711415,
+		"dateLastModified": 1602711415
+	},
+	"monster": [
+		{
+			"name": "Light Infantry (Unit)",
+			"source": "MassCombat",
+			"size": "G",
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 40",
+				"average": 220
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 11,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Unit Makes two attacks with its spears"
+					]
+				},
+				{
+					"name": "Spears",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}45 ({@damage 10d6 + 10}) piercing damage."
+					]
+				},
+				{
+					"name": "Javelin (2/Restock)",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}40 ({@damage 10d6 + 10}) slashing damage in melee."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Medium Infantry",
+			"source": "MassCombat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"action": [
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin (2/Restock)",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage in melee."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Heavy Infantry",
+			"source": "MassCombat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 6",
+				"average": 15
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"action": [
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin (2/Restock)",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Light Infantry",
+			"source": "MassCombat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 11,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Javelin (2/Restock)",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage in melee."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Medium Infantry (Unit)",
+			"source": "MassCombat",
+			"size": "G",
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The unit makes two attacks with its Battleaxes"
+					]
+				},
+				{
+					"name": "Battleaxes",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}65 ({@damage 10d8 + 20}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin (2/Restock)",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}55 ({@damage 10d6 + 20}) slashing damage in melee."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Heavy Infantry (Unit)",
+			"source": "MassCombat",
+			"size": "G",
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 120",
+				"average": 300
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The unit makes two attacks with its Battleaxes"
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}75 ({@damage 10d8 + 30}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin (2/Restock)",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}65 ({@damage 10d6 + 30}) slashing damage."
+					]
+				}
+			],
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		}
+	]
+}
