@@ -1,0 +1,418 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CompanionsOfTheScarletSage",
+				"abbreviation": "CoftSS",
+				"full": "CompanionsOfTheScarletSage",
+				"url": "",
+				"authors": [
+					"Rising"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1606015803,
+		"dateLastModified": 1606015803
+	},
+	"monster": [
+		{
+			"name": "Leolis",
+			"source": "CompanionsOfTheScarletSage",
+			"size": "L",
+			"type": "celestial",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 17,
+			"int": 7,
+			"wis": 15,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4",
+				"survival": "+4",
+				"insight": "+6"
+			},
+			"passive": 14,
+			"resist": [
+				"radiant"
+			],
+			"languages": [
+				"All",
+				"but can't speak"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Running Leap",
+					"entries": [
+						"With a 10-foot running start, the Leolis can long jump up to 25 feet."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the leolis moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Illumination",
+					"entries": [
+						"The leolis sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+					]
+				},
+				{
+					"name": "Shielded Mind",
+					"entries": [
+						"The leolis is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Leolis makes one bite attack and one claw attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kZqS3m4.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kZqS3m4.png",
+			"traitTags": [
+				"Illumination",
+				"Pounce"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Helianthus",
+			"source": "CompanionsOfTheScarletSage",
+			"size": "L",
+			"type": "celestial",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 39",
+				"average": 110
+			},
+			"speed": {
+				"swim": 0
+			},
+			"str": 14,
+			"dex": 5,
+			"con": 16,
+			"int": 4,
+			"wis": 12,
+			"cha": 18,
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+			],
+			"passive": 11,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"All but can't speak"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Suncharge",
+					"entries": [
+						"The Helianthus regains 5 hit points at the start of each of its turns if it's within direct sunlight and has 1 hit point or more remaining."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The helianthus has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sunray",
+					"entries": [
+						"{@atk sp} {@hit 6} to hit, range 90 ft., one target. {@h}27 ({@damage 5d8 + 4}) radiant damage."
+					]
+				},
+				{
+					"name": "Healing Spores (1/short rest)",
+					"entries": [
+						"The Helianthus sheds a bunch of healing spores, all creatures within 20 feet of it regain 16 ({@dice 3d10}) hit points"
+					]
+				},
+				{
+					"name": "Sleeping Spores (1/short rest)",
+					"entries": [
+						"The Helianthus sheds a bunch of sleeping spores, all creatures within 10 feet of it must succeed on a {@dc 14} constitution save or fall {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Stunning Spores (1/short rest)",
+					"entries": [
+						"The Helianthus sheds a bunch of stunning spores, all creatures within 10 feet of it must succeed on a {@dc 14} constitution save or be {@condition stunned} until the end of the Helianthus' next turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PjqU69E.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/PjqU69E.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"R"
+			]
+		},
+		{
+			"name": "The Fallen Serpent",
+			"source": "CompanionsOfTheScarletSage",
+			"size": "L",
+			"type": "fiend",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "21"
+		},
+		{
+			"name": "Winter Wolf Pup",
+			"source": "CompanionsOfTheScarletSage",
+			"size": "S",
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d6 + 7",
+				"average": 31
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 5,
+			"wis": 9,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"passive": 13,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Giant",
+				"Winter Wolf"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Snow Camouflage",
+					"entries": [
+						"The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 6}",
+					"entries": [
+						"The wolf exhales a blast of freezing wind in a 10-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 4 ({@damage 1d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic"
+			],
+			"fluff": {
+				"name": "Winter Wolf",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves' deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Winter Wolf.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Winter Wolf.png?v=1.116.7",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/winter-wolf.mp3?v=1.116.7"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"OTH"
+			],
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		}
+	]
+}
