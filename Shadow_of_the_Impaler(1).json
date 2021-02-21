@@ -1,0 +1,5839 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ShadowoftheImpaler",
+				"abbreviation": "SofI",
+				"full": "Shadow of the Impaler",
+				"url": "",
+				"authors": [
+					"Rising"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1613927592,
+		"dateLastModified": 1613927592
+	},
+	"monster": [
+		{
+			"name": "Marrowwing",
+			"source": "ShadowoftheImpaler",
+			"size": "G",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d20 + 105",
+				"average": 262
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 24,
+			"int": 4,
+			"wis": 9,
+			"cha": 6,
+			"save": {
+				"dex": "+6",
+				"con": "+13",
+				"wis": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+11",
+				"stealth": "+6"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 21,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Draconic but can't speak"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Titan's Advance",
+					"entries": [
+						"Marrowwing ignores difficult terrain, and his speed can't be reduced. It can spend 5 feet of movement to escape from restraints or being {@condition grappled}."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Marrowwing deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Draconic Wrath (Mythic Trait; Recharges after a Short or Long Rest)",
+					"entries": [
+						"If Marrowwing is reduced to 0 hit points, he doesn't die. Instead he regains hit points equal to half his maximum hit points.",
+						"Creatures within 120 feet that hear the dragon must succeed on a {@dc 21} Constitution Save or take 33 ({@damage 6d10}) thunder damage and be {@condition deafened} for the next hour. Regardless of success or failure, all creatures that hear the roar are {@condition frightened} until the end of their next turn."
+					]
+				},
+				{
+					"name": "Arcane Reinforcement",
+					"entries": [
+						"At the start of each of Marrowwing's turns he gains 25 temporary hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage plus 9 ({@damage 2d8}) cold damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a {@dc 22} Constitution saving throw, taking 72 ({@damage 16d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 22} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If Marrowwing's Mythic trait is active, he can use the options below as legendary actions for 1 hour after using Draconic Wrath."
+			],
+			"mythic": [
+				{
+					"name": "Bite",
+					"entries": [
+						"Marrowwing makes one bite attack."
+					]
+				},
+				{
+					"name": "Grave Raiser (Costs 2 Actions)",
+					"entries": [
+						"Marrowwing raises {@dice 2d4 + 2} dread warriors."
+					]
+				}
+			],
+			"dragonCastingColor": "W",
+			"hasToken": true,
+			"traitTags": [
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"deafened",
+				"prone"
+			]
+		},
+		{
+			"name": "Ruxandra",
+			"isNpc": true,
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Half Plate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 16,
+			"int": 17,
+			"wis": 24,
+			"cha": 18,
+			"save": {
+				"con": "+8",
+				"wis": "+12",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+8",
+				"deception": "+9",
+				"insight": "+17",
+				"intimidation": "+9",
+				"perception": "+12",
+				"religion": "+8"
+			},
+			"passive": 22,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish",
+				"Infernal"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Ruxandra is a 19th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Madam Eva has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell command}",
+								"{@spell detect evil and good}",
+								"{@spell protection from evil and good}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell protection from poison}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell create food and water}",
+								"{@spell speak with dead}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell divination}",
+								"{@spell freedom of movement}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell greater restoration}",
+								"{@spell raise dead}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell find the path}",
+								"{@spell harm}",
+								"{@spell true seeing}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell fire storm}",
+								"{@spell regenerate}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell earthquake}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"hasToken": true,
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"I"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			]
+		},
+		{
+			"name": "Undying King",
+			"source": "ShadowoftheImpaler",
+			"page": 241,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item half plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 199,
+				"formula": "21d8 + 105"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 20,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Martial Fury",
+					"entries": [
+						"As a bonus action, the sword wraith can make one weapon attack, which deals an extra 13 ({@damage 3d8}) necrotic damage on a hit. If it does so, attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Turning Defiance",
+					"entries": [
+						"The sword wraith and any other sword wraiths within 30 feet of it have advantage on saving throws against effects that turn undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sword wraith makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage, or 14 ({@damage 2d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}10 ({@damage 2d8 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Call to Honor (1/Day)",
+					"entries": [
+						"To use this action, the sword wraith must have taken damage during the current combat. If the sword wraith can use this action, it gives itself advantage on attack rolls until the end of its next turn, and {@dice 1d4 + 1} {@creature sword wraith warrior|mtf|sword wraith warriors} appear in unoccupied spaces within 30 feet of it. The warriors last until they drop to 0 hit points, and they take their turns immediately after the commander's turn on the same initiative count."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"swamp"
+			],
+			"fluff": {
+				"name": "Sword Wraith Commander",
+				"source": "MTF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Sword Wraith",
+										"entries": [
+											"When a glory-obsessed warrior dies in battle without earning the honor it desperately sought, its valor—hungry spirit might haunt the battlefield as a sword wraith."
+										]
+									},
+									{
+										"name": "Brooding Spirits",
+										"type": "entries",
+										"entries": [
+											"The most likely spots for encountering sword wraiths are scenes of ancient ambushes, battlefields where soldiers were felled by magic with no chance to fight back, and sites where enemies were hemmed in and slaughtered without quarter."
+										]
+									},
+									{
+										"name": "Honor Above All",
+										"type": "entries",
+										"entries": [
+											"Sword wraiths fly into a rage if anyone questions their valor. Conversely, they are easily appeased by praise. Little pleases them more than hearing a ballad performed in their honor. Towns located near ancient battlefields hold annual festivals of remembrance to keep sword wraiths there placated."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A sword wraith doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MTF/Sword Wraith.jpg"
+						}
+					}
+				]
+			},
+			"hasToken": true,
+			"tokenUrl": "https://5e.tools/img/MTF/Sword Wraith Commander.png?v=1.103.5",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/703/sword-wraith-commander.mp3",
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Ocarr",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 15,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+4",
+				"insight": "+6",
+				"animal handling": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ocarr makes two longsword attacks. "
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 3}) slashing damage, or 7 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Midnight Striker",
+			"shortName": "Striker",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"Studded Leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 20,
+			"con": 18,
+			"int": 16,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"stealth": "+13",
+				"perception": "+6",
+				"investigation": "+7"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Stride of Hollow Moon",
+					"entries": [
+						"After every melee attack the Striker makes they can choose to teleport up to 20 feet."
+					]
+				},
+				{
+					"name": "Indomitable (2/Day)",
+					"entries": [
+						"When the striker fails a saving throw he can choose to reroll it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Razor Spear",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, plus 9 ({@damage 2d8}) psychic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Riposte",
+					"entries": [
+						"As a reaction when a creature misses the striker with a melee attack within 5 feet, the striker can make one melee attack against the creature."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/D8KHNTk.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/D8KHNTk.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Shadow Hound",
+			"source": "ShadowoftheImpaler",
+			"page": 182,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 16,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"necrotic"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage plus 11 ({@damage 2d6 + 4}) necrotic damage."
+					]
+				},
+				{
+					"name": "Shadow Breath {@recharge 5}",
+					"entries": [
+						"The hound exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 31 ({@damage 9d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7omzoss.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/7omzoss.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hell-hound.mp3?v=1.106.7"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Midnight Knife Master",
+			"shortName": "Knife Master",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Studded Leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 13,
+			"dex": 20,
+			"con": 16,
+			"int": 16,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"stealth": "+13",
+				"perception": "+6",
+				"investigation": "+7"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Indomitable (1/Day)",
+					"entries": [
+						"When the Knife Master fails a saving throw he can choose to reroll it."
+					]
+				},
+				{
+					"name": "Spectral Grasp",
+					"entries": [
+						"Once a turn when the Knife Master hits a living creature with a spectral knife attack, the Knife Master can force the target to make a {@dc 16} Wisdom save or be Paralyzed until the end of the Knife Master's next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Knife Master makes 4 Spectral Knife attacks."
+					]
+				},
+				{
+					"name": "Spectral Knife",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}12 ({@damage 2d6 + 5}) psychic damage."
+					]
+				},
+				{
+					"name": "Fan of Knives {@recharge}",
+					"entries": [
+						"All creatures within 20 feet of the Knife master must succeed on a {@dc 16} constitution saving throw. On a failure the creature takes 15 ({@damage 3d6 + 5}) psychic damage and is {@condition blinded} until the end of their next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spell Counter",
+					"entries": [
+						"When a creature casts a spell within 20 feet of the Knife Master, The Knife Master can make a spectral knife attack against them. On a hit the creature must succeed on a concentration check with disadvantage. On a failure the spell is countered, On a success the spell goes through without problem."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/D8KHNTk.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/D8KHNTk.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"blinded"
+			]
+		},
+		{
+			"name": "Xander",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item studded leather armor +1}, Suave Defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 19,
+			"con": 17,
+			"int": 17,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+7",
+				"int": "+6",
+				"wis": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+6",
+				"stealth": "+10",
+				"athletics": "+4",
+				"persuasion": "+7",
+				"history": "+6"
+			},
+			"passive": 21,
+			"languages": [
+				"Common",
+				"Thieves' cant"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Talisman Spellcasting",
+					"headerEntries": [
+						"Xander grafts Talisman that take the shape of small pieces of paper with gemstones attached to them. These talismans can be used to cast a spell.",
+						"These Talisman have a DC of 17"
+					],
+					"daily": {
+						"1": [
+							"{@spell blight}",
+							"{@spell enlarge/reduce}",
+							"{@spell fireball}",
+							"{@spell haste}",
+							"{@spell mirror image}"
+						]
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Paladin Spellcasting",
+					"headerEntries": [
+						"Xander is a 4th level vengeance paladin with a spell save DC of 16. He has the following spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell searing smite}",
+								"{@spell thunderous smite}",
+								"{@spell wrathful smite}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Suave Defense",
+					"entries": [
+						"Xander adds his charisma modifier to his AC as long as he's not wearing medium or heavy armor."
+					]
+				},
+				{
+					"name": "Twilight Lavender",
+					"entries": [
+						"Xander uses a special poison on his weapons called \"Twilight Lavender\" which ignores a undead's poison resistance or immunity but is resisted by any living creature."
+					]
+				},
+				{
+					"name": "Vow of Enmity (1/day)",
+					"entries": [
+						"As a bonus action, Xander can designate a creature within 10 feet of him with a Vow of Enmity. While marked this way Xander has advantage on his attack rolls against that creature."
+					]
+				},
+				{
+					"name": "Alert",
+					"entries": [
+						"Xander is immune to the surprised condition."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Xander makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Keen Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) damage, plus 14 ({@damage 3d8}) poison damage.",
+						"Attacks with this weapon score a critical hit on a 19 or a 20"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When Xander is hit by an attack he can see, he can use his reaction to half the damage he takes."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Xander is a human man somewhere in his early thirties that lives on his own in Giulatun, he works with the lumberjacks and despite being a younger member all his coworkers seem to like him.",
+					"Xander is a sociable man who likes to spend most of his time keeping a low profile.",
+					"However Xander has a secret he keeps from even his closest friends, since he was a little kid he's been working religiously to assassinate the governing body of the town, Prince Varn. Xander's mother was a medicine woman who happened to be in the wrong place at the wrong time. As a revolution broke out she simply tended to the wounded as was her nature. However the Prince considered this an affront to his authority, saying the people he wounded should've been left to die. Refusing to leave the men defenseless Xander's mother stood her ground. And was swiftly cut down by the prince before Xander's eyes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/uObIYW2.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/uObIYW2.png",
+			"altArt": [
+				{
+					"name": "Vistana Assassin",
+					"source": "CoS"
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TC"
+			],
+			"damageTags": [
+				"I"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "The Tormentor",
+			"source": "ShadowoftheImpaler",
+			"size": "L",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"Flesh"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "17d10 + 119",
+				"average": 212
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 24,
+			"int": 3,
+			"wis": 14,
+			"cha": 9,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Common and Giant but can't speak"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Multiple Heads",
+					"entries": [
+						"The the tormentor has several heads. While it has more than one head, the tormentor has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Tormentor has advantage on all saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tormentor makes three attacks, one slam and two greatsword attacks. "
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}32 ({@damage 4d12 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}24 ({@damage 4d8 + 6}) bludgeoning damage. The target must succeed on a {@dc 19} Strength save or be knocked {@condition prone} and moved up to 20 feet in a direction of the tormentor's choosing."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GuYtw4e.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/GuYtw4e.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/ogre-zombie.mp3?v=1.106.7"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Vampire Spawn - Knight",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 68",
+				"average": 144
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 18,
+			"int": 11,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"wis": "+3",
+				"str": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6",
+				"performance": "+4",
+				"athletics": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"The vampire has the following flaws:",
+						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} The vampire takes 20 acid damage when it ends its turn in running water.",
+						"{@i Stake to the Heart.} The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
+						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes two greatsword attacks and can use lifedrinker if they hit those attacks. "
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"When the vampire gets hit with an attack it can use its reaction to add +3 to its AC for that attack."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/a8InT3V.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/a8InT3V.png",
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Seasoned Guard",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+2",
+				"athletics": "+6",
+				"intimidation": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/nAdtQsC.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/nAdtQsC.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/guard.mp3?v=1.106.7"
+			},
+			"altArt": [
+				{
+					"name": "Vistana Guard",
+					"source": "CoS"
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Vampire Spawn - Mage",
+			"source": "ShadowoftheImpaler",
+			"page": 298,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d8 + 44"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 18,
+			"int": 18,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"dex": "+6",
+				"wis": "+3",
+				"int": "+7"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The vampire spawn is a 7th level wizard, they have the following spells prepared, (spell save {@dc 15}, {@hit 7} to hit with spell attacks)"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell dancing lights}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chromatic orb}",
+								"{@spell ice knife|XGE}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell hold person}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink}",
+								"{@spell dispel magic}",
+								"{@spell haste}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell blight}"
+							],
+							"slots": 1
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"The vampire has the following flaws:",
+						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} The vampire takes 20 acid damage when it ends its turn in running water.",
+						"{@i Stake to the Heart.} The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
+						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}7 ({@damage 3d4}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 13})."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/nOmQNxy.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/nOmQNxy.png",
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Flamewalker Zombie",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "8d8 + 40",
+				"average": 76
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 20,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"wis": "+1"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it spoke in life but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Fiery Death",
+					"entries": [
+						"If a Flamewalker zombie dies it combusts in small mass of flames, creatures within 10 feet of the Flamewalker must succeed on a {@dc 16} Dexterity save, taking 14({@dice 4d6}) fire damage on a failure, or half as much on a success."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Flamewalker Zombie makes 2 claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage, plus 9 ({@damage 2d8}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The Flamewalker zombie spews fire in a 20-foot cone. creatures within the area must succeed on a {@dc 16} dexterity save or take 27 ({@damage 8d6}) fire damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iu9Devq.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/iu9Devq.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/zombie.mp3?v=1.106.7"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Nalla",
+			"source": "ShadowoftheImpaler",
+			"size": "G",
+			"type": "fey",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 123,
+				"formula": "13d12 + 39"
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 30
+			},
+			"str": 23,
+			"dex": 20,
+			"con": 16,
+			"int": 15,
+			"wis": 16,
+			"cha": 16,
+			"skill": {
+				"perception": "+7",
+				"deception": "+7",
+				"intimidation": "+7",
+				"survival": "+7"
+			},
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The snake makes one constrict and one bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one creature. {@h}34 ({@damage 8d6 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one creature. {@h}42 ({@damage 8d8 + 6}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the creature is {@condition restrained}, and the snake can't constrict another target."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BOzQuv6.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/BOzQuv6.png",
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "The Captain",
+			"shortName": "Captain",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor +3|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"average": 379,
+				"formula": "33d8 + 231"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 24,
+			"con": 24,
+			"int": 20,
+			"wis": 20,
+			"cha": 18,
+			"save": {
+				"str": "+11",
+				"dex": "+14",
+				"con": "+14",
+				"int": "+12",
+				"wis": "+12",
+				"cha": "+11"
+			},
+			"skill": {
+				"athletics": "+11",
+				"intimidation": "+11",
+				"perception": "+12",
+				"persuasion": "+11"
+			},
+			"passive": 22,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"The warlord can reroll a saving throw it fails. It must use the new roll."
+					]
+				},
+				{
+					"name": "Survivor",
+					"entries": [
+						"The warlord regains 10 hit points at the start of its turn if it has at least 1 hit point but fewer hit points than half its hit point maximum."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The warlord makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"The warlord makes a weapon attack."
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"The warlord targets one ally it can see within 30 feet of it. if the target can see and hear the warlord, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 2 Actions)",
+					"entries": [
+						"The warlord targets one enemy it can see within 30 feet of it. If the target can see and hear it, the target must succeed on a {@dc 19} Wisdom saving throw or be {@condition frightened} until the end of warlord's next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/SofI/Warlord.png?v=1.106.7",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/warlord.mp3?v=1.106.7"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Claire",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Studded Leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 15,
+			"int": 14,
+			"wis": 9,
+			"cha": 13,
+			"save": {
+				"dex": "+8",
+				"wis": "+2",
+				"con": "+5"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"perception": "+5",
+				"history": "+5",
+				"investigation": "+8"
+			},
+			"passive": 15,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Expert Sharpshooter (2/Short Rest)",
+					"entries": [
+						"As a bonus action, Claire can give herself advantage on her next attack."
+					]
+				},
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the claire has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the claire scores against a surprised creature is a critical hit."
+					]
+				},
+				{
+					"name": "Keeneye Sharpshooting",
+					"entries": [
+						"If Claire takes a minute to make her attack with Keeneye, she can add an additional {@damage 6d6} damage when it hits."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Claire makes 4 attacks with her Repeater Crossbow, or two with an improvised weapon or three unarmed strikes."
+					]
+				},
+				{
+					"name": "Keeneye",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 300/1200 ft., one target. {@h}41 ({@damage 8d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Repeater Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 100/400 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Improvised Weapon",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/PBaMMOW.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Death Knight",
+			"source": "ShadowoftheImpaler",
+			"page": 47,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 180,
+				"formula": "19d8 + 95"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 11,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+6",
+				"wis": "+9",
+				"cha": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The death knight is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell command}",
+								"{@spell compelled duel}",
+								"{@spell searing smite}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell hold person}",
+								"{@spell magic weapon}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell elemental weapon}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell banishment}",
+								"{@spell staggering smite}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell destructive wave} (necrotic)"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The death knight has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Marshal Undead",
+					"entries": [
+						"Unless the death knight is {@condition incapacitated}, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The death knight makes three longsword attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage, or 10 ({@damage 1d10 + 5}) slashing damage if used with two hands, plus 18 ({@damage 4d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Hellfire Orb (1/Day)",
+					"entries": [
+						"The death knight hurls a magical ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a {@dc 18} Dexterity saving throw. The sphere spreads around corners. A creature takes 35 ({@damage 10d6}) fire damage and 35 ({@damage 10d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/SofI/Death Knight.png?v=1.106.11",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/death-knight.mp3?v=1.106.11"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			]
+		},
+		{
+			"name": "Glenn",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 144,
+				"formula": "17d8 + 68"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 22,
+			"con": 18,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+11",
+				"wis": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+11",
+				"sleight of hand": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"The vampire can reroll a failed saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Painbringer",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 80/320 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage. Painbringer holds 6 rounds and must be reloaded after they've been expanded."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 18})."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. ",
+						"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed."
+					]
+				},
+				{
+					"name": "Bite {@recharge 5}",
+					"entries": [
+						"The Vampire sinks his teeth into a creature within 5 feet of him that is either {@condition grappled} or {@condition charmed} by him. The creature must succeed on a {@dc 17} Constitution save or drop to 0 hit points. The Vampire regains HP equal to the damage dealt."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The vampire moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Shoot",
+					"entries": [
+						"The vampire makes an attack with Painbringer or reloads."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"The vampire makes one unarmed strike."
+					]
+				},
+				{
+					"name": "Bite (Costs 2 Actions)",
+					"entries": [
+						"The vampire makes one bite attack."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pcqvhze.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/pcqvhze.png",
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed"
+			]
+		},
+		{
+			"name": "Gerrvuln",
+			"isNpc": true,
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Vuln"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d8 + 114",
+				"average": 199
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 22,
+			"int": 11,
+			"wis": 16,
+			"cha": 15,
+			"save": {
+				"wis": "+6",
+				"con": "+9",
+				"str": "+8"
+			},
+			"skill": {
+				"athletics": "+8",
+				"intimidation": "+5",
+				"stealth": "+7",
+				"survival": "+6",
+				"perception": "+9"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Vulnic"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Vulnic Rage",
+					"entries": [
+						"When Gerrvuln has less than 100 hit points he can awaken the primal wrath of the Vuln. As a bonus action, he gains resistance against Bludgeoning, Piercing and Slashing damage for the next 10 minutes. During this time his claws deal an additional {@damage 2d6} slashing damage. When this trait ends Gerrvuln suffers a level of {@condition exhaustion}."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"Gerrvuln has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gerrvuln makes three attacks with his claws or with his oversized longbow."
+					]
+				},
+				{
+					"name": "Oversized Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Claw (Vulnic Rage)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}22 ({@damage 5d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"prone"
+			]
+		},
+		{
+			"name": "Blackguard",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 153,
+				"formula": "18d8 + 72"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 11,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"wis": "+5",
+				"cha": "+5",
+				"str": "+7"
+			},
+			"skill": {
+				"athletics": "+7",
+				"deception": "+5",
+				"intimidation": "+5"
+			},
+			"passive": 12,
+			"resist": [
+				{
+					"special": "Bludgeoning, Piercing and Slashing damage from non-magical weapons"
+				}
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The blackguard is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell command}",
+								"{@spell protection from evil and good}",
+								"{@spell thunderous smite}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell find steed}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell blinding smite}",
+								"{@spell dispel magic}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Protection",
+					"entries": [
+						"Allied creatures within 10 feet gain a +2 to Saving Throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blackguard makes three attacks with its greataxe."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/epCynU8.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/epCynU8.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/blackguard.mp3?v=1.106.13"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"prone"
+			]
+		},
+		{
+			"name": "Miles",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 144,
+				"formula": "17d8 + 68"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The vampire is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The vampire has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell green-flame blade|SCAG}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chromatic orb}",
+								"{@spell comprehend languages}",
+								"{@spell sleep}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell hold person}",
+								"{@spell mirror image}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell bestow curse}",
+								"{@spell fireball}",
+								"{@spell nondetection}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell greater invisibility}",
+								"{@spell vitriolic sphere|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell dominate person}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell eyebite}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell simulacrum}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell Abi-Dalzim's horrid wilting|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the vampire fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes two unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 18})."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.",
+						"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/oXu8xBA.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/oXu8xBA.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"unconscious"
+			]
+		},
+		{
+			"name": "Andrei",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 19,
+			"save": {
+				"con": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"deception": "+6",
+				"persuasion": "+6"
+			},
+			"passive": 11,
+			"resist": [
+				"lightning",
+				"thunder"
+			],
+			"languages": [
+				"Common",
+				"Old Northern"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Andrei is a 6th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks) He has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell friends}",
+								"{@spell minor illusion}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}",
+								"{@spell thunderclap|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell disguise self}",
+								"{@spell thunderwave}",
+								"{@spell witch bolt}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell shatter}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell lightning bolt}",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Lightning Grasp (1/ Short Rest)",
+					"entries": [
+						"When Andrei damages a creature with lightning damage, he can choose to cause the lightning to paralyze the creature. The creature must succeed on a {@dc 14} Constitution Save or be {@condition paralyzed} until the end of the creature's next turn."
+					]
+				},
+				{
+					"name": "Unstable Magic",
+					"entries": [
+						"Whenever Andrei casts a spell, roll a {@dice d10} and add the level of the spell to the number. If the total equals 10 or greater he takes {@damage 2d6} necrotic damage and the spell fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QqCUGZU.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/QqCUGZU.png",
+			"altArt": [
+				{
+					"name": "Vistana Commoner",
+					"source": "CoS"
+				},
+				{
+					"name": "Commoner",
+					"source": "EGW"
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Ivarr",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "16d10 + 112",
+				"average": 200
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 26,
+			"dex": 16,
+			"con": 24,
+			"int": 12,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+12",
+				"str": "+13",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+13",
+				"intimidation": "+8",
+				"survival": "+8"
+			},
+			"passive": 13,
+			"resist": [
+				"bludgeoning",
+				"cold",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Rage (2/short rest)",
+					"entries": [
+						"As a bonus action, Ivarr can go into a rage that lasts for up to 10 minutes minute. The rage ends early if Ivarr is killed or ends it as a bonus action.",
+						"He has advantage on Strength checks and Strength saves."
+					]
+				},
+				{
+					"name": "Relentless",
+					"entries": [
+						"If damage reduces Ivarr to 0 hit points, he must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, Ivarr remains at 1 hit point instead."
+					]
+				},
+				{
+					"name": "Iron Will",
+					"entries": [
+						"Ivarr has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d12 + 7}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Retaliation",
+					"entries": [
+						"When Ivarr takes damage from a creature within 5 feet of him, he can use his reaction to make a melee weapon attack against that creature."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Qwa4Gxm.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Qwa4Gxm.png",
+			"altArt": [
+				{
+					"name": "Diabolical Berserker",
+					"source": "MTF",
+					"page": 18
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Silvus",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item studded leather armor +1}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 15,
+			"save": {
+				"dex": "+10",
+				"wis": "+8",
+				"con": "+9"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"athletics": "+8",
+				"insight": "+8",
+				"stealth": "+10",
+				"perception": "+8"
+			},
+			"senses": [
+				"Blindsight 30 feet"
+			],
+			"passive": 18,
+			"languages": [
+				"Common"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Avoidance",
+					"entries": [
+						"If Silvus is subjected to an effect that allows him to make a saving throw to only take half damage, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Silvus makes three attacks, he can replace one of his attacks with a use of Halting Hand."
+					]
+				},
+				{
+					"name": "Halting Hand",
+					"entries": [
+						"A creature within 5 feet of Silvus must succeed on a {@dc 18} Charisma save or be frozen in time untill the end of Silvus' next turn. While frozen in time the creature is {@condition paralyzed}, can't be targeted and is immune to all damage and effects."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) damage, plus 10 ({@damage 3d6}) psychic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spell Swallow",
+					"entries": [
+						"If Silvus is subjected to the effects of a spell he can see, as a reaction he can swallow the spell in his hand and store it there. He can only keep one spell stored at a time."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Silvus can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Silvus regains spent legendary actions at the start of his turn."
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"Silvus makes a shortsword attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Silvus moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Swallowed Spell (Costs 2 Actions)",
+					"entries": [
+						"If Silvus has a swallowed spell, he casts it."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Sorahn The Vice",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 13,
+			"con": 19,
+			"int": 9,
+			"wis": 13,
+			"cha": 16,
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+7",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when Sorahn hits with it."
+					]
+				},
+				{
+					"name": "Iron Grip",
+					"entries": [
+						"Sorahn has advantage on any strength checks to shove, trip or break or grapple a creature or object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sorahn makes 3 attacks"
+					]
+				},
+				{
+					"name": "Grasp",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) damage and the target is {@condition grappled} (escape {@dc 18}), While {@condition grappled} the target is {@condition restrained}."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) damage."
+					]
+				},
+				{
+					"name": "Heavy Weapon",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d12 + 6}) damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Retaliation",
+					"entries": [
+						"If a creature within 5 feet of Sorahn deals damage to him he can make a melee weapon attack against them as a reaction."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Ipuynda.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Ipuynda.png",
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Sir. Roland Ashton",
+			"shortName": "Sir. Ashton",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 120",
+				"average": 255
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 14,
+			"wis": 18,
+			"cha": 20,
+			"save": {
+				"wis": "+10",
+				"cha": "+11",
+				"str": "+11",
+				"con": "+10"
+			},
+			"skill": {
+				"athletics": "+11",
+				"deception": "+11",
+				"intimidation": "+11"
+			},
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Sir. Ashton can cast the following spells without material components: "
+					],
+					"will": [
+						"{@spell command}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell bane}",
+							"{@spell banishment} (6th level)",
+							"{@spell destructive wave}",
+							"{@spell dispel magic}",
+							"{@spell hold monster} (7th level)"
+						],
+						"1e": [
+							"{@spell dominate person}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sir. Ashton makes three attacks with his longsword."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage, plus 10 ({@damage 3d6}) necrotic damage."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Sir. Ashton can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Sir. Ashton regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Command",
+					"entries": [
+						"Sir. Ashton casts Command"
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"name": "Blackguard",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Blackguards are paladins who broke their sacred oaths and now indulge their own dark ambitions. They consort with fiends and undead, and they reject all goodly things from their former lives."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/VGM/Blackguard.png?v=1.110.5",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/blackguard.mp3?v=1.110.5"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"prone"
+			]
+		},
+		{
+			"name": "Rasvan",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 120",
+				"average": 228
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 20,
+			"int": 10,
+			"wis": 16,
+			"cha": 15,
+			"save": {
+				"str": "+9",
+				"con": "+9",
+				"wis": "+7"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+6",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"Rasvan rerolls a failed saving throw."
+					]
+				},
+				{
+					"name": "Executioner's Wrath",
+					"entries": [
+						"When Rasvan is below 200 health, he exudes a frightening aura. ",
+						"Any enemy that starts its turn within 20 feet of him must succeed on a {@dc 16} Constitution save, on a failure the creature takes 20 necrotic damage, on a success the creature takes 10 damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rasvan makes three attacks with his greataxe, Misery."
+					]
+				},
+				{
+					"name": "Misery",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Drain Vigor",
+					"entries": [
+						"When a creature strikes Rasvan with a melee attack, he can force them to make a {@dc 18} Constitution Save, on failure the creatures strength score is reduced by {@dice 2d4} and Rasvan strength score increases by an equal amount."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/SYjSwdZ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/SYjSwdZ.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Lillia",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"dex": "+7",
+				"int": "+4"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+3",
+				"perception": "+3",
+				"stealth": "+10"
+			},
+			"passive": 13,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Thieves' cant plus any two languages"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/K7yLjal.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/K7yLjal.png",
+			"altArt": [
+				{
+					"name": "Vistana Assassin",
+					"source": "CoS"
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TC",
+				"X"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Shallah",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 36",
+				"average": 76
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 18,
+			"int": 18,
+			"wis": 20,
+			"cha": 17,
+			"save": {
+				"int": "+8",
+				"wis": "+9",
+				"con": "+8"
+			},
+			"skill": {
+				"perception": "+9",
+				"survival": "+13",
+				"nature": "+8",
+				"medicine": "+9",
+				"animal handling": "+9",
+				"insight": "+13",
+				"athletics": "+7"
+			},
+			"passive": 19,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Shaman Spellcasting",
+					"rest": {
+						"1": [
+							"{@spell chain lightning}",
+							"{@spell fire storm}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the goliath takes damage, it reduces the damage taken by 9 ({@dice 1d12 + 3})."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Tm4NebV.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Tm4NebV.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Tundra Marcher",
+			"source": "ShadowoftheImpaler",
+			"size": "G",
+			"type": "dragon",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d20 + 108",
+				"average": 297
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 24,
+			"dex": 14,
+			"con": 23,
+			"int": 2,
+			"wis": 15,
+			"cha": 13,
+			"skill": {
+				"perception": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 22,
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The tundra marcher deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The tundra marcher has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tundra Marcher makes four attacks, one with its bite, two with its claws, and one with its tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}29 ({@damage 4d10 + 7}) piercing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the tyrannosaurus can't bite another target."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}33 ({@damage 4d12 + 7}) bludgeoning damage. If the target is huge or smaller it must succeed on a {@dc 20} strength save or be knocked {@condition prone} and pushed up to 30 feet away."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Q204rL9.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Q204rL9.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Hóvihar",
+			"source": "ShadowoftheImpaler",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10 + 20"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 14,
+			"int": 7,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+3"
+			},
+			"passive": 15,
+			"resist": [
+				"acid",
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Giant",
+				"Winter Wolf"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Snow Camouflage",
+					"entries": [
+						"The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Rotted Cold Breath {@recharge 5}",
+					"entries": [
+						"The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 9 ({@damage 2d8}) acid damage and 9 ({@damage 2d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Winter Wolf.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Winter Wolf.png?v=1.115.1",
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"OTH"
+			],
+			"damageTags": [
+				"A",
+				"C",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Rime Fiend",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "8d10 + 40"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 19,
+			"con": 21,
+			"int": 8,
+			"wis": 15,
+			"cha": 13,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The rime fiend has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The rime fiend can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Rime Fiend makes three attacks: one with its Bite, one with its claws, and one with its tail."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) slashing damage, 9 ({@damage 2d8}) cold damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d10 + 5}) slashing damage. The target must succeed on a {@dc 16} Constitution saving throw or become {@condition poisoned} until it takes a long rest, while {@condition poisoned} in this way, the creature only regains half the hit points from rolling hit dice."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, plus 14 ({@damage 4d6}) necrotic damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/2VkebNM.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/2VkebNM.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Yarha Blade Thrower",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 32",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 10,
+			"wis": 15,
+			"cha": 13,
+			"save": {
+				"con": "+6",
+				"wis": "+4",
+				"dex": "+5"
+			},
+			"skill": {
+				"athletics": "+6",
+				"perception": "+4",
+				"survival": "+4",
+				"stealth": "+5"
+			},
+			"passive": 14,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Blade Thrower makes two attacks with her Kpinga."
+					]
+				},
+				{
+					"name": "Kpinga",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 60 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the goliath takes damage, it reduces the damage taken by 9 ({@dice 1d12 + 3})."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/q1nZUtX.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/q1nZUtX.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Yarha Great Archer",
+			"isNpc": true,
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 16,
+			"int": 11,
+			"wis": 17,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+5",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Yarha Bowmen's innate spellcasting ability is Wisdom(spell save {@dc 14}). He has the following spells prepared:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell ensnaring strike}",
+							"{@spell hail of thorns}",
+							"{@spell lightning arrow}"
+						],
+						"1e": [
+							"{@spell conjure volley}",
+							"{@spell pass without trace}",
+							"{@spell swift quiver}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Bowmen makes three attacks with his glaive or with his Warbow."
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Yarha Warbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 200/800 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the goliath takes damage, it reduces the damage taken by 9 ({@dice 1d12 + 3})."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/qC7JLPD.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/qC7JLPD.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"prone"
+			]
+		},
+		{
+			"name": "Snow Charger Dog",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 8",
+				"average": 30
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 15,
+			"int": 4,
+			"wis": 13,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"passive": 13,
+			"resist": [
+				"cold"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The dog has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The dog has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"Snow Chargers are well trained large dogs that pull sleigh's and track animals through the barren tundra's of Ashborough.",
+					"Snow Chargers are often white but they can also be gray, black or brown."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QLVSDDr.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/QLVSDDr.png",
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Yarha War Cleaver",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Heavy Padded Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 18,
+			"int": 11,
+			"wis": 14,
+			"cha": 13,
+			"skill": {
+				"athletics": "+9",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Yarha War Cleaver's innate spellcasting ability is Wisdom(spell save {@dc 13}). He has the following spells prepared:"
+					],
+					"daily": {
+						"2e": [
+							"{@spell blinding smite}",
+							"{@spell thunderous smite}",
+							"{@spell wrathful smite}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The War Cleaver makes two attacks with its Cleaver Blade."
+					]
+				},
+				{
+					"name": "Cleaver Blade",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}20 ({@damage 4d6 + 6}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the goliath takes damage, it reduces the damage taken by 10 ({@dice 1d12 + 4})."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Dj4KKig.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Dj4KKig.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Yarha (Template)",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item hide armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 16,
+			"int": 10,
+			"wis": 15,
+			"cha": 10,
+			"skill": {
+				"athletics": "+6",
+				"perception": "+4",
+				"survival": "+4"
+			},
+			"passive": 14,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the goliath takes damage, it reduces the damage taken by 9 ({@dice 1d12 + 3})."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Gualtor",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item hide armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 9,
+			"con": 16,
+			"int": 17,
+			"wis": 20,
+			"cha": 16,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"athletics": "+6",
+				"perception": "+7",
+				"survival": "+7"
+			},
+			"passive": 17,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the goliath takes damage, it reduces the damage taken by 9 ({@dice 1d12 + 3})."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Yrsa",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Yarha"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense",
+						"{@item bracers of defense}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 17,
+			"int": 14,
+			"wis": 15,
+			"cha": 17,
+			"skill": {
+				"athletics": "+8",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Yarha"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Mountain Born",
+					"entries": [
+						"The goliath is acclimated to high altitude, including elevations above 20,000 feet."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Yrsa makes three attacks with her Chain Hammer"
+					]
+				},
+				{
+					"name": "Chain Hammer",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 15 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Stone's Endurance (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the goliath takes damage, it reduces the damage taken by 9 ({@dice 1d12 + 3})."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/idqgL1x.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/idqgL1x.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Bette",
+			"isNpc": true,
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "fey",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 120,
+				"formula": "16d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 17,
+			"cha": 13,
+			"save": {
+				"wis": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"arcana": "+13",
+				"religion": "+13",
+				"nature": "+9"
+			},
+			"passive": 13,
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Bette is a 16th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Baba Lysaga has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell magic missile}",
+								"{@spell sleep}",
+								"{@spell witch bolt}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell enlarge/reduce}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell lightning bolt}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell Evard's black tentacles}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell geas}",
+								"{@spell scrying}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell circle of death}",
+								"{@spell programmed illusion}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell mirage arcane}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"legendaryHeader": [
+				"Bette can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Bette regains spent legendary actions at the start of its turn."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MTRsdki.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/MTRsdki.png",
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			]
+		},
+		{
+			"name": "Bette Marionette",
+			"isNpc": true,
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": {
+				"type": "fey",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 120,
+				"formula": "16d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 17,
+			"cha": 13,
+			"save": {
+				"wis": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"arcana": "+13",
+				"religion": "+13",
+				"nature": "+9"
+			},
+			"passive": 13,
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Bette is a 16th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Baba Lysaga has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell magic missile}",
+								"{@spell sleep}",
+								"{@spell witch bolt}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell enlarge/reduce}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell lightning bolt}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell Evard's black tentacles}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"legendaryHeader": [
+				"Bette can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Bette regains spent legendary actions at the start of its turn."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MTRsdki.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/MTRsdki.png",
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			]
+		},
+		{
+			"name": "Svaldrin",
+			"source": "ShadowoftheImpaler",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"average": 180,
+				"formula": "19d8 + 95"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"wis": "+9",
+				"cha": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The death knight is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell command}",
+								"{@spell compelled duel}",
+								"{@spell searing smite}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell hold person}",
+								"{@spell magic weapon}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell elemental weapon}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell banishment}",
+								"{@spell staggering smite}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell destructive wave} (necrotic)"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The death knight has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The death knight makes three Fólcvíg attacks."
+					]
+				},
+				{
+					"name": "Hellfire Orb (1/Day)",
+					"entries": [
+						"The death knight hurls a magical ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a {@dc 18} Dexterity saving throw. The sphere spreads around corners. A creature takes 35 ({@damage 10d6}) fire damage and 35 ({@damage 10d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Fólcvíg",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) slashing damage, plus 18 ({@damage 4d8}) necrotic damage, plus 9 ({@damage 2d8}) fire damage."
+					]
+				},
+				{
+					"name": "Fólcvíg (thrown)",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 20/60 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage, plus 18 ({@damage 4d8}) necrotic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/x5hjfFe.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/x5hjfFe.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			]
+		},
+		{
+			"name": "Arch Tiger",
+			"source": "ShadowoftheImpaler",
+			"size": "G",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d20 + 200",
+				"average": 462
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 29,
+			"dex": 12,
+			"con": 26,
+			"int": 2,
+			"wis": 13,
+			"cha": 8,
+			"passive": 11,
+			"cr": "17",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tiger makes three attacks, one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one creature. {@h}27 ({@damage 4d8 + 9}) piercing damage plus 21 ({@damage 6d6}) cold damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}20 ({@damage 2d10 + 9}) slashing damage."
+					]
+				}
+			],
+			"legendaryActions": 5,
+			"legendary": [
+				{
+					"name": "Leap",
+					"entries": [
+						"The Arch Tiger moves 20 feet without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"The Tiger makes one claw attack"
+					]
+				},
+				{
+					"name": "Thunderstrike (Costs 2 Actions)",
+					"entries": [
+						"Up to 5 creatures within 60 feet must succeed on a {@dc 20} Dexterity save or take {@damage 2d10} lightning damage and be {@condition stunned} until the end of their turn."
+					]
+				},
+				{
+					"name": "Hurricane (Costs 2 Actions)",
+					"entries": [
+						"All creatures in a 100 feet long 30 feet wide line must succeed on a {@dc 20} Strength save or take {@damage 4d10} force damage and be pushed 20 feet and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Blizzard (Costs 2 Actions)",
+					"entries": [
+						"All creatures in a 40 foot cube starting from the Tiger must succeed on a {@dc 20} Constitution save or take {@damage 3d10} cold damage and be {@condition restrained}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NGfKQWs.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/NGfKQWs.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained",
+				"stunned"
+			]
+		},
+		{
+			"name": "Arch Tiger",
+			"source": "ShadowoftheImpaler",
+			"size": "G",
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d20 + 160",
+				"average": 370
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 29,
+			"dex": 12,
+			"con": 26,
+			"int": 2,
+			"wis": 13,
+			"cha": 8,
+			"passive": 11,
+			"cr": "17",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The krasis makes three attacks: one with its bite, one with its claws, and one with its tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one creature. {@h}27 ({@damage 4d8 + 9}) piercing damage plus 21 ({@damage 6d6}) cold damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}20 ({@damage 2d10 + 9}) slashing damage."
+					]
+				}
+			],
+			"legendaryActions": 5,
+			"legendary": [
+				{
+					"name": "Hurricane (Costs 2 Actions)",
+					"entries": [
+						"All creatures in a 100 feet long 30 feet wide line must succeed on a {@dc 20} Strength save or take 13 {@damage 2d12} force damage and be pushed 20 feet and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Lightning",
+					"entries": [
+						"Up to 6 creatures within 60 feet of the arch tiger must succeed on a {@dc 20} dexterity save or take {@damage 6d6} lightning damage, or half as much on a success."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NGfKQWs.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/NGfKQWs.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
