@@ -1,0 +1,568 @@
+{
+	"siteVersion": "1.131.4",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheDeathOfGreywood",
+				"abbreviation": "DoG",
+				"full": "The Death Of Greywood",
+				"url": "",
+				"authors": [
+					"Rising"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1624589252,
+		"dateLastModified": 1624589252
+	},
+	"monster": [
+		{
+			"name": "Draugr",
+			"source": "TheDeathOfGreywood",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 22,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) piercing damage and the Draugr can choose one of the following additional effects:",
+						{
+							"type": "list",
+							"items": [
+								"The target is thrown up to 10 feet away and must succeed on a {@dc 13} Dexterity saving throw or take 5 ({@damage 2d4}) and be knocked {@condition prone}",
+								"The target must succeed on a {@dc 13} Strength saving throw or be {@condition grappled} and the Draugr can make a bite attack against the target."
+							]
+						}
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sLcLjyv.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/sLcLjyv.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Draugr Amalgamation",
+			"source": "TheDeathOfGreywood",
+			"size": "H",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "9d12 + 45",
+				"average": 103
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 20,
+			"int": 3,
+			"wis": 15,
+			"cha": 13,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Assimilated Vessel",
+					"entries": [
+						"When the Draugr Amalgamation dies, it spawns a {@creature Wrathful Spirit} that uses the same initiative count."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d8 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d4 + 8}) slashing damage and the Draugr can choose one of the following additional effects:",
+						{
+							"type": "list",
+							"items": [
+								"The target is thrown up to 20 feet away and must succeed on a {@dc 13} Dexterity saving throw or take 9 ({@damage 2d8}) and be knocked {@condition prone}",
+								"The target must succeed on a {@dc 15} Strength saving throw or be {@condition grappled} and the Draugr can make a bite attack against the target."
+							]
+						}
+					]
+				},
+				{
+					"name": "Slash",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d4 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Breath of Cartilage (Charge 1)",
+					"entries": [
+						"The draugr exhales a forceful breath of bone shards and teeth in a 30 foot cone. Creatures must succeed on a {@dc 15} dexterity save or take 21 ({@damage 6d6}) piercing damage, or half as much on a success."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Slash",
+					"entries": [
+						"The Draugr makes one slash attack"
+					]
+				},
+				{
+					"name": "Writhing Bones (Costs 2 Actions)",
+					"entries": [
+						"All creatures within 10 feet of the Draugr must succeed on a {@dc 15} Dexterity save or take 14 ({@damage 3d8}) piercing damage."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Tomb of Greywood",
+				"source": "TheDeathOfGreywood"
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/L3cmKiw.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/L3cmKiw.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Walter",
+			"source": "TheDeathOfGreywood",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "4d8 + 12",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Insanity",
+					"entries": [
+						"Walter has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Walter makes two claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage, plus 14 ({@damage 3d8}) necrotic damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/xhPJveX.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/xhPJveX.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Gravekeeper",
+			"source": "TheDeathOfGreywood",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "5d8 + 25",
+				"average": 47
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 20,
+			"int": 14,
+			"wis": 13,
+			"cha": 16,
+			"skill": {
+				"stealth": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The gravekeeper makes one attack with his sickle and one with his shovel."
+					]
+				},
+				{
+					"name": "sickle",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage, plus 7 ({@damage 2d6}) poison damage. and the target must succeed on a {@dc 13} con save or be {@condition poisoned} for 1 minute."
+					]
+				},
+				{
+					"name": "Shovel",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage. and the target must succeed on a {@dc 13} Con save or be {@condition stunned} until the end of their next turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7YfU32e.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/7YfU32e.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Wrathful Spirit",
+			"shortName": "Spirit",
+			"source": "TheDeathOfGreywood",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "7d8 + 28",
+				"average": 59
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 18,
+			"int": 12,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"wis": "+6",
+				"int": "+4",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"immune": [
+				{
+					"immune": [
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Incorporeal Form",
+					"entries": [
+						"The spirit can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+						"Any creature the spirit moves through takes 5 ({@damage 1d10}) necrotic damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Anguish",
+					"entries": [
+						"The spirit forces a creature within 30 feet of it to succeed on a {@dc 15} wisdom save, on a failure the creature takes ({@damage 4d8}) psychic damage and is {@condition frightened} for 1 minute. While {@condition frightened} the creature takes an additional 5 ({@damage 1d8}) psychic damage at the start of each of their turns. The creature repeats the save at the end of each of its turns, ending the effect on a success."
+					]
+				},
+				{
+					"name": "Surge of Shades",
+					"entries": [
+						"All creatures within 20 feet of the spirit must succeed on a {@dc 15} dexterity saving throw or take 14 ({@damage 4d6}) necrotic damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Shift",
+					"entries": [
+						"The spirit moves up to half its movement speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Wrath",
+					"entries": [
+						"The spirit forces a creature within 30 feet of it to succeed on a {@dc 15} wisdom save, on a failure the creature uses its reaction to make a weapon attack against a creature within range of the spirits choice."
+					]
+				},
+				{
+					"name": "Drain Vigor",
+					"entries": [
+						"A creature within 30 feet of the spirit must succeed on a dc 15 constitution save, on a failure the creature takes 5d8 necrotic damage and it's maximum health is reduced for an amount equal to half the damage dealt. On a success the creatures takes half damage and it's health total is not reduced."
+					]
+				},
+				{
+					"name": "Surge of Shades (Costs 2 Actions)",
+					"entries": [
+						"The Spirit uses its Surge of Shades."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Tomb of Greywood",
+				"source": "TheDeathOfGreywood"
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/4kjLKxW.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/4kjLKxW.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"Y"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
